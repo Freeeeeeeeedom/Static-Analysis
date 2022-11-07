@@ -1,0 +1,50 @@
+class DeadAssignment extends java.lang.Object
+{
+
+    void deadAssign()
+    {
+        int x, y, temp$0, z, temp$1, a;
+        DeadAssignment this;
+
+        this := @this: DeadAssignment;
+
+        x = 1;
+
+        temp$0 = x;
+
+        y = temp$0 + 2;
+
+        temp$1 = x;
+
+        z = temp$1 + 3;
+
+        virtualinvoke this.<DeadAssignment: void use(int)>(z);
+
+        a = x;
+
+        return;
+    }
+
+    void use(int)
+    {
+        int n;
+        DeadAssignment this;
+
+        this := @this: DeadAssignment;
+
+        n := @parameter0: int;
+
+        return;
+    }
+
+    void <init>()
+    {
+        DeadAssignment this;
+
+        this := @this: DeadAssignment;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

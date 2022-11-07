@@ -1,0 +1,34 @@
+class A extends java.lang.Object
+{
+    C c;
+
+    void <init>()
+    {
+        A this;
+        C temp$0;
+
+        this := @this: A;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        temp$0 = null;
+
+        this.<A: C c> = temp$0;
+
+        return;
+    }
+
+    void setC(C)
+    {
+        A this;
+        C c;
+
+        this := @this: A;
+
+        c := @parameter0: C;
+
+        this.<A: C c> = c;
+
+        return;
+    }
+}

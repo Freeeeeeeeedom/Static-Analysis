@@ -1,0 +1,30 @@
+public class ControlFlowUnreachable extends java.lang.Object
+{
+
+    static int foo()
+    {
+        int x;
+
+        x = 1;
+
+        return x;
+
+        staticinvoke <ControlFlowUnreachable: void dead()>();
+    }
+
+    static void dead()
+    {
+        return;
+    }
+
+    public void <init>()
+    {
+        ControlFlowUnreachable this;
+
+        this := @this: ControlFlowUnreachable;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

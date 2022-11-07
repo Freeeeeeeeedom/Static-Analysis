@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[1620]网络信号最好的坐标.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/doc/content/[1620]网络信号最好的坐标.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1620" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[1620]网络信号最好的坐标.java" />
+              <option name="titleSlug" value="coordinate-with-maximum-network-quality" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,70 @@
+class Loops extends java.lang.Object
+{
+
+    void deadLoop()
+    {
+        int x, y, z;
+        Loops this;
+
+        this := @this: Loops;
+
+        x = 1;
+
+        y = 0;
+
+        z = 100;
+
+     label1:
+        nop;
+
+        if x > y goto label2;
+
+        goto label3;
+
+     label2:
+        nop;
+
+        virtualinvoke this.<Loops: void use(int)>(z);
+
+        goto label1;
+
+     label3:
+        nop;
+
+        virtualinvoke this.<Loops: void dead()>();
+
+        return;
+    }
+
+    void dead()
+    {
+        Loops this;
+
+        this := @this: Loops;
+
+        return;
+    }
+
+    void use(int)
+    {
+        int n;
+        Loops this;
+
+        this := @this: Loops;
+
+        n := @parameter0: int;
+
+        return;
+    }
+
+    void <init>()
+    {
+        Loops this;
+
+        this := @this: Loops;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

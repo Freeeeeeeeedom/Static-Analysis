@@ -1,0 +1,52 @@
+class Branch extends java.lang.Object
+{
+
+    int ifElse(int, int, int)
+    {
+        Branch this;
+        int m, n, k, x, temp$0, temp$1, temp$2, temp$3;
+
+        this := @this: Branch;
+
+        m := @parameter0: int;
+
+        n := @parameter1: int;
+
+        k := @parameter2: int;
+
+        x = m;
+
+        if n > 0 goto label1;
+
+        goto label2;
+
+     label1:
+        nop;
+
+        temp$0 = x;
+
+        temp$1 = temp$0 + n;
+
+        return temp$1;
+
+     label2:
+        nop;
+
+        temp$2 = k;
+
+        temp$3 = temp$2 + n;
+
+        return temp$3;
+    }
+
+    void <init>()
+    {
+        Branch this;
+
+        this := @this: Branch;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

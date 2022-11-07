@@ -1,0 +1,87 @@
+class BranchConstant extends java.lang.Object
+{
+
+    void constant1(boolean)
+    {
+        BranchConstant this;
+        int x, y, z, temp$0, temp$1, temp$2, n;
+        boolean b;
+
+        this := @this: BranchConstant;
+
+        b := @parameter0: boolean;
+
+        x = 2;
+
+        y = 2;
+
+        if b == 0 goto label2;
+
+        goto label1;
+
+     label1:
+        nop;
+
+        temp$0 = x;
+
+        temp$1 = temp$0 + y;
+
+        z = temp$1;
+
+        goto label3;
+
+     label2:
+        nop;
+
+        temp$2 = x * y;
+
+        z = temp$2;
+
+     label3:
+        nop;
+
+        n = z;
+
+        return;
+    }
+
+    void constant2(boolean)
+    {
+        BranchConstant this;
+        int x, temp$0, y;
+        boolean b;
+
+        this := @this: BranchConstant;
+
+        b := @parameter0: boolean;
+
+        if b == 0 goto label2;
+
+        goto label1;
+
+     label1:
+        nop;
+
+        temp$0 = 10;
+
+        x = temp$0;
+
+     label2:
+        nop;
+
+        y = x;
+
+        return;
+    }
+
+    void <init>()
+    {
+        BranchConstant this;
+
+        this := @this: BranchConstant;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

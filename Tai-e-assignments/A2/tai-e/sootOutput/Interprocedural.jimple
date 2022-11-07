@@ -1,0 +1,79 @@
+class Interprocedural extends java.lang.Object
+{
+
+    void param(int, boolean)
+    {
+        int i, x, y, temp$0;
+        Interprocedural this;
+        boolean b, p;
+
+        this := @this: Interprocedural;
+
+        i := @parameter0: int;
+
+        b := @parameter1: boolean;
+
+        x = i;
+
+        temp$0 = i;
+
+        y = temp$0 + 10;
+
+        p = b;
+
+        return;
+    }
+
+    void invoke()
+    {
+        int x, temp$0, y, temp$1;
+        Interprocedural this;
+
+        this := @this: Interprocedural;
+
+        temp$0 = virtualinvoke this.<Interprocedural: int ten()>();
+
+        x = temp$0;
+
+        temp$1 = virtualinvoke this.<Interprocedural: int id(int)>(10);
+
+        y = temp$1;
+
+        return;
+    }
+
+    int ten()
+    {
+        int temp$0;
+        Interprocedural this;
+
+        this := @this: Interprocedural;
+
+        temp$0 = 10;
+
+        return temp$0;
+    }
+
+    int id(int)
+    {
+        int x;
+        Interprocedural this;
+
+        this := @this: Interprocedural;
+
+        x := @parameter0: int;
+
+        return x;
+    }
+
+    void <init>()
+    {
+        Interprocedural this;
+
+        this := @this: Interprocedural;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

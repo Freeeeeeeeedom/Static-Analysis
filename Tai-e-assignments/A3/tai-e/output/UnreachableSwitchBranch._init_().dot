@@ -1,0 +1,10 @@
+digraph G {
+  node [style=filled,shape=box,color=".3 .2 1.0",];
+  "0" [label="Entry<UnreachableSwitchBranch: void <init>()>",];
+  "1" [label="0: <UnreachableSwitchBranch: void <init>()>[0@L1] invokespecial %this.<init>()",];
+  "2" [label="1: return",];
+  "3" [label="Exit<UnreachableSwitchBranch: void <init>()>",];
+  "0" -> "1" [label="ENTRY",];
+  "1" -> "2" [label="FALL_THROUGH",];
+  "2" -> "3" [label="RETURN",];
+}

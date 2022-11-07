@@ -1,0 +1,8 @@
+digraph G {
+  node [color=".3 .2 1.0",style=filled,shape=box,];
+  "0" [label="Entry<Loops: void dead()>",];
+  "1" [label="0: return",];
+  "2" [label="Exit<Loops: void dead()>",];
+  "0" -> "1" [label="ENTRY",];
+  "1" -> "2" [label="RETURN",];
+}

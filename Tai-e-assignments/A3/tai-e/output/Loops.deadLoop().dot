@@ -1,0 +1,31 @@
+digraph G {
+  node [color=".3 .2 1.0",style=filled,shape=box,];
+  "0" [label="Entry<Loops: void deadLoop()>",];
+  "1" [label="0: x = 1",];
+  "2" [label="1: y = 0",];
+  "3" [label="2: z = 100",];
+  "4" [label="3: nop",];
+  "5" [label="4: if (x > y) goto 6",];
+  "6" [label="5: goto 9",];
+  "7" [label="6: nop",];
+  "8" [label="7: <Loops: void deadLoop()>[7@L8] invokevirtual %this.use(z)",];
+  "9" [label="8: goto 3",];
+  "10" [label="9: nop",];
+  "11" [label="10: <Loops: void deadLoop()>[10@L10] invokevirtual %this.dead()",];
+  "12" [label="11: return",];
+  "13" [label="Exit<Loops: void deadLoop()>",];
+  "0" -> "1" [label="ENTRY",];
+  "1" -> "2" [label="FALL_THROUGH",];
+  "2" -> "3" [label="FALL_THROUGH",];
+  "3" -> "4" [label="FALL_THROUGH",];
+  "4" -> "5" [label="FALL_THROUGH",];
+  "5" -> "7" [label="IF_TRUE",];
+  "5" -> "6" [label="IF_FALSE",];
+  "6" -> "10" [label="GOTO",];
+  "7" -> "8" [label="FALL_THROUGH",];
+  "8" -> "9" [label="FALL_THROUGH",];
+  "9" -> "4" [label="GOTO",];
+  "10" -> "11" [label="FALL_THROUGH",];
+  "11" -> "12" [label="FALL_THROUGH",];
+  "12" -> "13" [label="RETURN",];
+}

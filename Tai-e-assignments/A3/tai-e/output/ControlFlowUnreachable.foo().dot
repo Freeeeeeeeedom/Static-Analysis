@@ -1,0 +1,11 @@
+digraph G {
+  node [shape=box,style=filled,color=".3 .2 1.0",];
+  "0" [label="Entry<ControlFlowUnreachable: int foo()>",];
+  "1" [label="0: x = 1",];
+  "2" [label="1: return x",];
+  "3" [label="2: <ControlFlowUnreachable: int foo()>[2@L6] invokestatic ControlFlowUnreachable.dead()",];
+  "4" [label="Exit<ControlFlowUnreachable: int foo()>",];
+  "0" -> "1" [label="ENTRY",];
+  "1" -> "2" [label="FALL_THROUGH",];
+  "2" -> "4" [label="RETURN",];
+}

@@ -1,0 +1,68 @@
+class Array extends java.lang.Object
+{
+
+    int sum(int[])
+    {
+        Array this;
+        int[] arr, temp$2;
+        int result, i, temp$0, temp$1, temp$3, temp$4, temp$5, temp$6, temp$7;
+
+        this := @this: Array;
+
+        arr := @parameter0: int[];
+
+        result = 0;
+
+        i = 0;
+
+     label1:
+        nop;
+
+        temp$0 = lengthof arr;
+
+        if i < temp$0 goto label2;
+
+        goto label3;
+
+     label2:
+        nop;
+
+        temp$1 = result;
+
+        temp$2 = arr;
+
+        temp$3 = i;
+
+        temp$4 = temp$2[temp$3];
+
+        temp$5 = temp$1 + temp$4;
+
+        result = temp$5;
+
+        nop;
+
+        temp$6 = i;
+
+        temp$7 = temp$6 + 1;
+
+        i = temp$7;
+
+        goto label1;
+
+     label3:
+        nop;
+
+        return result;
+    }
+
+    void <init>()
+    {
+        Array this;
+
+        this := @this: Array;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

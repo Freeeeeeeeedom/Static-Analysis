@@ -1,0 +1,58 @@
+class SimpleChar extends java.lang.Object
+{
+
+    void constant()
+    {
+        char a, x;
+        SimpleChar this;
+
+        this := @this: SimpleChar;
+
+        a = 97;
+
+        x = 120;
+
+        return;
+    }
+
+    void undefined()
+    {
+        char x, y, z, temp$0;
+        SimpleChar this;
+
+        this := @this: SimpleChar;
+
+        temp$0 = 122;
+
+        z = temp$0;
+
+        return;
+    }
+
+    void propagation()
+    {
+        char a, b, c;
+        SimpleChar this;
+
+        this := @this: SimpleChar;
+
+        a = 97;
+
+        b = a;
+
+        c = b;
+
+        return;
+    }
+
+    void <init>()
+    {
+        SimpleChar this;
+
+        this := @this: SimpleChar;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

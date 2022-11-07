@@ -1,0 +1,35 @@
+class Reference extends java.lang.Object
+{
+
+    A referenceType(C)
+    {
+        B b, temp$0;
+        C c;
+        Reference this;
+
+        this := @this: Reference;
+
+        c := @parameter0: C;
+
+        temp$0 = new B;
+
+        specialinvoke temp$0.<B: void <init>()>();
+
+        b = temp$0;
+
+        virtualinvoke b.<B: void setC(C)>(c);
+
+        return b;
+    }
+
+    void <init>()
+    {
+        Reference this;
+
+        this := @this: Reference;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

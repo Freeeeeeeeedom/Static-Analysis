@@ -1,0 +1,19 @@
+- id: throw
+  options:
+    exception: explicit
+    algorithm: intra
+- id: cfg
+  options:
+    exception: explicit
+    dump: false
+- id: livevar
+  options:
+    strongly: false
+- id: process-result
+  options:
+    analyses:
+    - livevar
+    only-app: true
+    action: compare
+    file: src\test\resources\dataflow\livevar\Array-livevar-expected.txt
+    log-mismatches: false

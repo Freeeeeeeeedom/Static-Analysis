@@ -1,0 +1,14 @@
+class B extends A
+{
+
+    void <init>()
+    {
+        B this;
+
+        this := @this: B;
+
+        specialinvoke this.<A: void <init>()>();
+
+        return;
+    }
+}

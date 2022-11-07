@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[1106]解析布尔表达式.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/doc/content/[1106]解析布尔表达式.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1106" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[1106]解析布尔表达式.java" />
+              <option name="titleSlug" value="parsing-a-boolean-expression" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[1668]最大重复子字符串.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/doc/content/[1668]最大重复子字符串.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1668" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[1668]最大重复子字符串.java" />
+              <option name="titleSlug" value="maximum-repeating-substring" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[754]到达终点数字.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/doc/content/[754]到达终点数字.md" />
+              <option name="frontendQuestionId" value="leetcode.cn754" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[754]到达终点数字.java" />
+              <option name="titleSlug" value="reach-a-number" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

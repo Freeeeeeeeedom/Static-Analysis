@@ -1,0 +1,24 @@
+- id: throw
+  options:
+    exception: explicit
+    algorithm: intra
+- id: cfg
+  options:
+    exception: explicit
+    dump: false
+- id: constprop
+  options:
+    edge-refine: false
+- id: livevar
+  options:
+    strongly: false
+- id: deadcode
+  options: {}
+- id: process-result
+  options:
+    analyses:
+    - deadcode
+    only-app: true
+    action: compare
+    file: src\test\resources\dataflow\deadcode\UnreachableIfBranch-deadcode-expected.txt
+    log-mismatches: false

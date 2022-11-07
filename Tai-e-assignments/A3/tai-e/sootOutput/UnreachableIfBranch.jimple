@@ -1,0 +1,51 @@
+class UnreachableIfBranch extends java.lang.Object
+{
+
+    int branch()
+    {
+        UnreachableIfBranch this;
+        int x, y, z, temp$0, temp$1;
+
+        this := @this: UnreachableIfBranch;
+
+        x = 10;
+
+        y = 1;
+
+        if x > y goto label1;
+
+        goto label2;
+
+     label1:
+        nop;
+
+        temp$0 = 100;
+
+        z = temp$0;
+
+        goto label3;
+
+     label2:
+        nop;
+
+        temp$1 = 200;
+
+        z = temp$1;
+
+     label3:
+        nop;
+
+        return z;
+    }
+
+    void <init>()
+    {
+        UnreachableIfBranch this;
+
+        this := @this: UnreachableIfBranch;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

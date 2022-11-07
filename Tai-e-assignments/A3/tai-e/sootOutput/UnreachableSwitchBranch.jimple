@@ -1,0 +1,90 @@
+class UnreachableSwitchBranch extends java.lang.Object
+{
+
+    void lookupSwitch()
+    {
+        int x, y, temp$0;
+        UnreachableSwitchBranch this;
+
+        this := @this: UnreachableSwitchBranch;
+
+        x = 1;
+
+        temp$0 = x << 3;
+
+        y = temp$0;
+
+        goto label5;
+
+     label1:
+        nop;
+
+        virtualinvoke this.<UnreachableSwitchBranch: void use(int)>(2);
+
+        goto label6;
+
+     label2:
+        nop;
+
+        virtualinvoke this.<UnreachableSwitchBranch: void use(int)>(4);
+
+        goto label6;
+
+     label3:
+        nop;
+
+        virtualinvoke this.<UnreachableSwitchBranch: void use(int)>(8);
+
+        goto label6;
+
+     label4:
+        nop;
+
+        virtualinvoke this.<UnreachableSwitchBranch: void use(int)>(666);
+
+        goto label6;
+
+        goto label6;
+
+     label5:
+        nop;
+
+        nop;
+
+        lookupswitch(y)
+        {
+            case 2: goto label1;
+            case 4: goto label2;
+            case 8: goto label3;
+            default: goto label4;
+        };
+
+     label6:
+        nop;
+
+        return;
+    }
+
+    void use(int)
+    {
+        int x;
+        UnreachableSwitchBranch this;
+
+        this := @this: UnreachableSwitchBranch;
+
+        x := @parameter0: int;
+
+        return;
+    }
+
+    void <init>()
+    {
+        UnreachableSwitchBranch this;
+
+        this := @this: UnreachableSwitchBranch;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

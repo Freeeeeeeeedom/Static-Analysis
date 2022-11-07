@@ -1,0 +1,152 @@
+class BranchLoop extends java.lang.Object
+{
+
+    int loopBranch(int, int, int)
+    {
+        BranchLoop this;
+        int m, n, k, a, i, temp$0, temp$1, temp$2, temp$3, temp$4;
+
+        this := @this: BranchLoop;
+
+        m := @parameter0: int;
+
+        n := @parameter1: int;
+
+        k := @parameter2: int;
+
+        temp$0 = m - 1;
+
+        i = temp$0;
+
+     label1:
+        nop;
+
+        if i < k goto label2;
+
+        goto label5;
+
+     label2:
+        nop;
+
+        if i >= n goto label3;
+
+        goto label4;
+
+     label3:
+        nop;
+
+        a = n;
+
+     label4:
+        nop;
+
+        temp$1 = a;
+
+        temp$2 = temp$1 + i;
+
+        a = temp$2;
+
+        nop;
+
+        temp$3 = i;
+
+        temp$4 = temp$3 + 1;
+
+        i = temp$4;
+
+        goto label1;
+
+     label5:
+        nop;
+
+        return a;
+    }
+
+    void branchLoop(int, boolean)
+    {
+        BranchLoop this;
+        int c, x, y, z, temp$0, temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7;
+        boolean d;
+
+        this := @this: BranchLoop;
+
+        c := @parameter0: int;
+
+        d := @parameter1: boolean;
+
+        temp$0 = 1;
+
+        x = temp$0;
+
+        temp$1 = 2;
+
+        y = temp$1;
+
+        if c > 0 goto label1;
+
+        goto label6;
+
+     label1:
+        nop;
+
+     label2:
+        nop;
+
+        temp$2 = y;
+
+        temp$3 = temp$2 + 1;
+
+        x = temp$3;
+
+        temp$4 = 2 * z;
+
+        y = temp$4;
+
+        if d == 0 goto label4;
+
+        goto label3;
+
+     label3:
+        nop;
+
+        temp$5 = y;
+
+        temp$6 = temp$5 + z;
+
+        x = temp$6;
+
+     label4:
+        nop;
+
+        temp$7 = 1;
+
+        z = temp$7;
+
+        nop;
+
+        if c < 20 goto label2;
+
+        goto label5;
+
+     label5:
+        nop;
+
+     label6:
+        nop;
+
+        z = x;
+
+        return;
+    }
+
+    void <init>()
+    {
+        BranchLoop this;
+
+        this := @this: BranchLoop;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

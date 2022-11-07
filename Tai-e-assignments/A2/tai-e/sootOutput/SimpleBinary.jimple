@@ -1,0 +1,124 @@
+class SimpleBinary extends java.lang.Object
+{
+
+    int arithmetic()
+    {
+        int x, y, z, temp$0;
+        SimpleBinary this;
+
+        this := @this: SimpleBinary;
+
+        x = 1;
+
+        y = 2;
+
+        temp$0 = x;
+
+        z = temp$0 + y;
+
+        return z;
+    }
+
+    boolean condition()
+    {
+        int x, y;
+        SimpleBinary this;
+        boolean z, temp$0;
+
+        this := @this: SimpleBinary;
+
+        x = 1;
+
+        y = 2;
+
+        if x == y goto label2;
+
+        goto label1;
+
+     label1:
+        nop;
+
+        temp$0 = 0;
+
+        goto label3;
+
+     label2:
+        nop;
+
+        temp$0 = 1;
+
+     label3:
+        nop;
+
+        z = temp$0;
+
+        return z;
+    }
+
+    int shift()
+    {
+        int x, y, z, temp$0;
+        SimpleBinary this;
+
+        this := @this: SimpleBinary;
+
+        x = 1;
+
+        y = 2;
+
+        temp$0 = x << y;
+
+        z = temp$0;
+
+        return z;
+    }
+
+    int bitwise()
+    {
+        int x, y, z, temp$0;
+        SimpleBinary this;
+
+        this := @this: SimpleBinary;
+
+        x = 1;
+
+        y = 2;
+
+        temp$0 = x | y;
+
+        z = temp$0;
+
+        return z;
+    }
+
+    int nac(int)
+    {
+        int p, x, y, z, temp$0;
+        SimpleBinary this;
+
+        this := @this: SimpleBinary;
+
+        p := @parameter0: int;
+
+        x = 1;
+
+        y = p;
+
+        temp$0 = x * y;
+
+        z = temp$0;
+
+        return z;
+    }
+
+    void <init>()
+    {
+        SimpleBinary this;
+
+        this := @this: SimpleBinary;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

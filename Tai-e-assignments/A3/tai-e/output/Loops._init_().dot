@@ -1,0 +1,10 @@
+digraph G {
+  node [color=".3 .2 1.0",style=filled,shape=box,];
+  "0" [label="Entry<Loops: void <init>()>",];
+  "1" [label="0: <Loops: void <init>()>[0@L1] invokespecial %this.<init>()",];
+  "2" [label="1: return",];
+  "3" [label="Exit<Loops: void <init>()>",];
+  "0" -> "1" [label="ENTRY",];
+  "1" -> "2" [label="FALL_THROUGH",];
+  "2" -> "3" [label="RETURN",];
+}

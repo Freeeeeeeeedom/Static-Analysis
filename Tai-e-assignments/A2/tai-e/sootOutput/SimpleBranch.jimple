@@ -1,0 +1,48 @@
+class SimpleBranch extends java.lang.Object
+{
+
+    static void NAC(int)
+    {
+        int p, x, temp$0, temp$1, y;
+
+        p := @parameter0: int;
+
+        if p > 0 goto label1;
+
+        goto label2;
+
+     label1:
+        nop;
+
+        temp$0 = 1;
+
+        x = temp$0;
+
+        goto label3;
+
+     label2:
+        nop;
+
+        temp$1 = 2;
+
+        x = temp$1;
+
+     label3:
+        nop;
+
+        y = x;
+
+        return;
+    }
+
+    void <init>()
+    {
+        SimpleBranch this;
+
+        this := @this: SimpleBranch;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

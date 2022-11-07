@@ -1,0 +1,19 @@
+- id: throw
+  options:
+    exception: explicit
+    algorithm: intra
+- id: cfg
+  options:
+    exception: explicit
+    dump: false
+- id: constprop
+  options:
+    edge-refine: false
+- id: process-result
+  options:
+    analyses:
+    - constprop
+    only-app: true
+    action: compare
+    file: src\test\resources\dataflow\constprop\Interprocedural-constprop-expected.txt
+    log-mismatches: false

@@ -1,0 +1,40 @@
+class Assign extends java.lang.Object
+{
+
+    void assign()
+    {
+        int x, y, temp$0, temp$1, temp$2;
+        Assign this;
+
+        this := @this: Assign;
+
+        x = 1;
+
+        temp$0 = 2;
+
+        x = temp$0;
+
+        temp$1 = 3;
+
+        x = temp$1;
+
+        temp$2 = 4;
+
+        x = temp$2;
+
+        y = x;
+
+        return;
+    }
+
+    void <init>()
+    {
+        Assign this;
+
+        this := @this: Assign;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

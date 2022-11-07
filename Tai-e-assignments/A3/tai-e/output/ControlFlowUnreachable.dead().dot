@@ -1,0 +1,8 @@
+digraph G {
+  node [shape=box,style=filled,color=".3 .2 1.0",];
+  "0" [label="Entry<ControlFlowUnreachable: void dead()>",];
+  "1" [label="0: return",];
+  "2" [label="Exit<ControlFlowUnreachable: void dead()>",];
+  "0" -> "1" [label="ENTRY",];
+  "1" -> "2" [label="RETURN",];
+}

@@ -1,0 +1,33 @@
+public class AbstractMethod extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        A a;
+        java.lang.String[] args;
+        B temp$0;
+
+        args := @parameter0: java.lang.String[];
+
+        temp$0 = new B;
+
+        specialinvoke temp$0.<B: void <init>()>();
+
+        a = temp$0;
+
+        virtualinvoke a.<A: void foo()>();
+
+        return;
+    }
+
+    public void <init>()
+    {
+        AbstractMethod this;
+
+        this := @this: AbstractMethod;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

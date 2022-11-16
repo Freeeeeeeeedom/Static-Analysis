@@ -1,0 +1,25 @@
+digraph G {
+  node [shape=box,color=".3 .2 1.0",style=filled,];
+  "0" [label="Entry<Interface: void main(java.lang.String[])>",];
+  "1" [label="0: temp$0 = new One",];
+  "2" [label="1: <Interface: void main(java.lang.String[])>[1@L8] invokespecial temp$0.<init>()",];
+  "3" [label="2: n = temp$0",];
+  "4" [label="3: <Interface: void main(java.lang.String[])>[3@L9] invokeinterface n.get()",];
+  "5" [label="4: return",];
+  "6" [label="Exit<Interface: void main(java.lang.String[])>",];
+  "7" [label="Entry<One: void <init>()>",];
+  "8" [label="0: <One: void <init>()>[0@L20] invokespecial %this.<init>()",];
+  "9" [label="1: return",];
+  "10" [label="Exit<One: void <init>()>",];
+  "0" -> "1" [];
+  "1" -> "2" [];
+  "2" -> "3" [style=dashed,];
+  "2" -> "7" [style=dashed,color=blue,];
+  "3" -> "4" [];
+  "4" -> "5" [style=dashed,];
+  "5" -> "6" [];
+  "7" -> "8" [];
+  "8" -> "9" [style=dashed,];
+  "9" -> "10" [];
+  "10" -> "3" [style=dashed,color=red,];
+}

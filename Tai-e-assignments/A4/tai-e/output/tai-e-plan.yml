@@ -1,0 +1,13 @@
+- id: cg
+  options:
+    algorithm: cha
+    action: null
+    file: null
+- id: process-result
+  options:
+    analyses:
+    - cg
+    only-app: true
+    action: compare
+    file: src\test\resources\cha\Interface-cg-expected.txt
+    log-mismatches: false

@@ -1,0 +1,74 @@
+public class Fibonacci extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        int n, z, temp$0;
+        java.lang.String[] args;
+
+        args := @parameter0: java.lang.String[];
+
+        n = 5;
+
+        z = 0;
+
+        temp$0 = staticinvoke <Fibonacci: int getFibonacci(int)>(n);
+
+        z = temp$0;
+
+        return;
+    }
+
+    public static int getFibonacci(int)
+    {
+        int n, temp$0, temp$1, temp$2, temp$3, temp$4, temp$5;
+
+        n := @parameter0: int;
+
+        if n == 0 goto label2;
+
+        goto label1;
+
+     label1:
+        nop;
+
+        if n == 1 goto label2;
+
+        goto label3;
+
+        goto label3;
+
+     label2:
+        nop;
+
+        return n;
+
+     label3:
+        nop;
+
+        temp$0 = n - 1;
+
+        temp$1 = staticinvoke <Fibonacci: int getFibonacci(int)>(temp$0);
+
+        temp$2 = temp$1;
+
+        temp$3 = n - 2;
+
+        temp$4 = staticinvoke <Fibonacci: int getFibonacci(int)>(temp$3);
+
+        temp$5 = temp$2 + temp$4;
+
+        return temp$5;
+    }
+
+    public void <init>()
+    {
+        Fibonacci this;
+
+        this := @this: Fibonacci;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

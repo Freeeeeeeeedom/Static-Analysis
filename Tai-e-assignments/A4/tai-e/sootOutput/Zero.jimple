@@ -1,0 +1,26 @@
+class Zero extends java.lang.Object implements Number
+{
+
+    public int get()
+    {
+        int temp$0;
+        Zero this;
+
+        this := @this: Zero;
+
+        temp$0 = 0;
+
+        return temp$0;
+    }
+
+    void <init>()
+    {
+        Zero this;
+
+        this := @this: Zero;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

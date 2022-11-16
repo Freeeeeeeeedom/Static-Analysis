@@ -1,0 +1,39 @@
+public class StaticCall extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+
+        args := @parameter0: java.lang.String[];
+
+        staticinvoke <StaticCall: void foo()>();
+
+        staticinvoke <A: void baz()>();
+
+        return;
+    }
+
+    static void foo()
+    {
+        staticinvoke <StaticCall: void bar()>();
+
+        return;
+    }
+
+    static void bar()
+    {
+        return;
+    }
+
+    public void <init>()
+    {
+        StaticCall this;
+
+        this := @this: StaticCall;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

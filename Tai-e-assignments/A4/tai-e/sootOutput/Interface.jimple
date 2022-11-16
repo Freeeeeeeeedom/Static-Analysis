@@ -1,0 +1,34 @@
+public class Interface extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        Number n;
+        One temp$0;
+        int temp$1;
+        java.lang.String[] args;
+
+        args := @parameter0: java.lang.String[];
+
+        temp$0 = new One;
+
+        specialinvoke temp$0.<One: void <init>()>();
+
+        n = temp$0;
+
+        temp$1 = interfaceinvoke n.<Number: int get()>();
+
+        return;
+    }
+
+    public void <init>()
+    {
+        Interface this;
+
+        this := @this: Interface;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

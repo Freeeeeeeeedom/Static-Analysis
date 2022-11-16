@@ -1,0 +1,75 @@
+public class Reference extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        Point p, temp$0, p2, temp$3;
+        int temp$1, temp$2, offset, z, temp$4, temp$5;
+
+        args := @parameter0: java.lang.String[];
+
+        temp$0 = new Point;
+
+        specialinvoke temp$0.<Point: void <init>()>();
+
+        p = temp$0;
+
+        temp$1 = 2;
+
+        p.<Point: int x> = temp$1;
+
+        temp$2 = 3;
+
+        p.<Point: int y> = temp$2;
+
+        offset = 1;
+
+        temp$3 = staticinvoke <Reference: Point adjustPoint(Point,int)>(p, offset);
+
+        p2 = temp$3;
+
+        temp$4 = p2.<Point: int x>;
+
+        temp$5 = p2.<Point: int y>;
+
+        z = temp$4 + temp$5;
+
+        return;
+    }
+
+    public static Point adjustPoint(Point, int)
+    {
+        int offset, temp$0, temp$1, temp$2, temp$3;
+        Point p;
+
+        p := @parameter0: Point;
+
+        offset := @parameter1: int;
+
+        temp$0 = p.<Point: int x>;
+
+        temp$1 = temp$0 + offset;
+
+        p.<Point: int x> = temp$1;
+
+        temp$2 = p.<Point: int y>;
+
+        temp$3 = temp$2 + offset;
+
+        p.<Point: int y> = temp$3;
+
+        return p;
+    }
+
+    public void <init>()
+    {
+        Reference this;
+
+        this := @this: Reference;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

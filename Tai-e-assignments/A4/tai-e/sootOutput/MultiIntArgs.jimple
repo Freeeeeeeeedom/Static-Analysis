@@ -1,0 +1,76 @@
+public class MultiIntArgs extends java.lang.Object
+{
+
+    static int goo(int, int)
+    {
+        int x, y, temp$0, temp$1;
+
+        x := @parameter0: int;
+
+        y := @parameter1: int;
+
+        temp$0 = x;
+
+        temp$1 = temp$0 + y;
+
+        return temp$1;
+    }
+
+    static int foo(int, int)
+    {
+        int x, y, temp$0;
+
+        x := @parameter0: int;
+
+        y := @parameter1: int;
+
+        temp$0 = x * y;
+
+        return temp$0;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        int a, b, c, temp$0, x, y, z, temp$1, r, s, t, temp$2;
+
+        args := @parameter0: java.lang.String[];
+
+        a = 2;
+
+        b = 3;
+
+        temp$0 = staticinvoke <MultiIntArgs: int goo(int,int)>(a, b);
+
+        c = temp$0;
+
+        x = 2;
+
+        y = 3;
+
+        temp$1 = staticinvoke <MultiIntArgs: int foo(int,int)>(x, y);
+
+        z = temp$1;
+
+        r = 4;
+
+        s = 5;
+
+        temp$2 = staticinvoke <MultiIntArgs: int foo(int,int)>(r, s);
+
+        t = temp$2;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        MultiIntArgs this;
+
+        this := @this: MultiIntArgs;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

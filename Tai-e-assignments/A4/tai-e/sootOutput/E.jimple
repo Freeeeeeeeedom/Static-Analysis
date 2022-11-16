@@ -1,0 +1,23 @@
+class E extends A
+{
+
+    void foo()
+    {
+        E this;
+
+        this := @this: E;
+
+        return;
+    }
+
+    void <init>()
+    {
+        E this;
+
+        this := @this: E;
+
+        specialinvoke this.<A: void <init>()>();
+
+        return;
+    }
+}

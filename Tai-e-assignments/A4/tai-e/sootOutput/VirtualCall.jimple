@@ -1,0 +1,32 @@
+public class VirtualCall extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        B b, temp$0;
+
+        args := @parameter0: java.lang.String[];
+
+        temp$0 = new B;
+
+        specialinvoke temp$0.<B: void <init>()>();
+
+        b = temp$0;
+
+        virtualinvoke b.<B: void foo()>();
+
+        return;
+    }
+
+    public void <init>()
+    {
+        VirtualCall this;
+
+        this := @this: VirtualCall;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

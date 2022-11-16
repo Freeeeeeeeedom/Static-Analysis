@@ -1,0 +1,16 @@
+class Point extends java.lang.Object
+{
+    public int x;
+    public int y;
+
+    void <init>()
+    {
+        Point this;
+
+        this := @this: Point;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

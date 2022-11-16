@@ -1,0 +1,12 @@
+digraph G {
+  node [color=".3 .2 1.0",style=filled,shape=box,];
+  "0" [label="<B: void foo()>",];
+  "1" [label="<AbstractMethod: void main(java.lang.String[])>",];
+  "2" [label="<java.lang.Object: void <init>()>",];
+  "3" [label="<B: void <init>()>",];
+  "4" [label="<A: void <init>()>",];
+  "1" -> "0" [label="[3@L5] invokevirtual a.<A: void foo()>();",];
+  "1" -> "3" [label="[1@L4] invokespecial temp$0.<B: void <init>()>();",];
+  "3" -> "4" [label="[0@L13] invokespecial %this.<A: void <init>()>();",];
+  "4" -> "2" [label="[0@L9] invokespecial %this.<java.lang.Object: void <init>()>();",];
+}

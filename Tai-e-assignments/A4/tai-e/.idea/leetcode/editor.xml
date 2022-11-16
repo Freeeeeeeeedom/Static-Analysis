@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[1704]判断字符串的两半是否相似.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/doc/content/[1704]判断字符串的两半是否相似.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1704" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[1704]判断字符串的两半是否相似.java" />
+              <option name="titleSlug" value="determine-if-string-halves-are-alike" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[1710]卡车上的最大单元数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/doc/content/[1710]卡车上的最大单元数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1710" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[1710]卡车上的最大单元数.java" />
+              <option name="titleSlug" value="maximum-units-on-a-truck" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[2471]逐层排序二叉树所需的最少操作数目.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/doc/content/[2471]逐层排序二叉树所需的最少操作数目.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2471" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[2471]逐层排序二叉树所需的最少操作数目.java" />
+              <option name="titleSlug" value="minimum-number-of-operations-to-sort-a-binary-tree-by-level" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[2472]不重叠回文子字符串的最大数目.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/doc/content/[2472]不重叠回文子字符串的最大数目.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2472" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[2472]不重叠回文子字符串的最大数目.java" />
+              <option name="titleSlug" value="maximum-number-of-non-overlapping-palindrome-substrings" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[775]全局倒置与局部倒置.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/doc/content/[775]全局倒置与局部倒置.md" />
+              <option name="frontendQuestionId" value="leetcode.cn775" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[775]全局倒置与局部倒置.java" />
+              <option name="titleSlug" value="global-and-local-inversions" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[790]多米诺和托米诺平铺.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/doc/content/[790]多米诺和托米诺平铺.md" />
+              <option name="frontendQuestionId" value="leetcode.cn790" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[790]多米诺和托米诺平铺.java" />
+              <option name="titleSlug" value="domino-and-tromino-tiling" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[791]自定义字符串排序.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/doc/content/[791]自定义字符串排序.md" />
+              <option name="frontendQuestionId" value="leetcode.cn791" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[791]自定义字符串排序.java" />
+              <option name="titleSlug" value="custom-sort-string" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[805]数组的均值分割.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/doc/content/[805]数组的均值分割.md" />
+              <option name="frontendQuestionId" value="leetcode.cn805" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[805]数组的均值分割.java" />
+              <option name="titleSlug" value="split-array-with-same-average" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[864]获取所有钥匙的最短路径.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/doc/content/[864]获取所有钥匙的最短路径.md" />
+              <option name="frontendQuestionId" value="leetcode.cn864" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[864]获取所有钥匙的最短路径.java" />
+              <option name="titleSlug" value="shortest-path-to-get-all-keys" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

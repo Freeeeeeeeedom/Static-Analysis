@@ -1,0 +1,4 @@
+digraph G {
+  node [shape=box,style=filled,color=".3 .2 1.0",];
+  "0" [label="<VirtualCall: void main(java.lang.String[])>",];
+}

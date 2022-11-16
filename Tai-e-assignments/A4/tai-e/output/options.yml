@@ -1,0 +1,16 @@
+optionsFile: null
+printHelp: false
+javaVersion: 17
+prependJVM: true
+classPath: src/test/resources/cha/
+mainClass: Interface
+worldBuilderClass: pascal.taie.frontend.soot.SootWorldBuilder
+preBuildIR: false
+scope: app
+nativeModel: true
+dumpClasses: false
+planFile: null
+analyses:
+  cg: algorithm:cha
+  process-result: "analyses:[cg];action:compare;file:src\\test\\resources\\cha\\Interface-cg-expected.txt"
+onlyGenPlan: false

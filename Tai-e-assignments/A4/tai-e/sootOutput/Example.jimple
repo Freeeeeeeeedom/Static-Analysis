@@ -1,0 +1,66 @@
+class Example extends java.lang.Object
+{
+
+    static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        int a, b, c, temp$0, temp$1, temp$2, temp$3, temp$4;
+
+        args := @parameter0: java.lang.String[];
+
+        temp$0 = 6;
+
+        a = temp$0;
+
+        temp$1 = staticinvoke <Example: int addOne(int)>(a);
+
+        b = temp$1;
+
+        temp$2 = b - 3;
+
+        c = temp$2;
+
+        temp$3 = staticinvoke <Example: int ten()>();
+
+        b = temp$3;
+
+        temp$4 = a * b;
+
+        c = temp$4;
+
+        return;
+    }
+
+    static int addOne(int)
+    {
+        int x, y, temp$0;
+
+        x := @parameter0: int;
+
+        temp$0 = x;
+
+        y = temp$0 + 1;
+
+        return y;
+    }
+
+    static int ten()
+    {
+        int temp$0;
+
+        temp$0 = 10;
+
+        return temp$0;
+    }
+
+    void <init>()
+    {
+        Example this;
+
+        this := @this: Example;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

@@ -1,0 +1,8 @@
+class D extends java.lang.Object {
+
+    void <init>() {
+        [0@L52] invokespecial %this.<java.lang.Object: void <init>()>();
+        [1@L52] return;
+    }
+
+}

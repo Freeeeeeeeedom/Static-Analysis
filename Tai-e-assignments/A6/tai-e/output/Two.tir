@@ -1,0 +1,14 @@
+class Two extends java.lang.Object implements Number {
+
+    public int get() {
+        int temp$0;
+        [0@L41] temp$0 = 2;
+        [1@L42] return temp$0;
+    }
+
+    void <init>() {
+        [0@L40] invokespecial %this.<java.lang.Object: void <init>()>();
+        [1@L40] return;
+    }
+
+}

@@ -1,0 +1,22 @@
+digraph G {
+  node [style=filled,color=".3 .2 1.0",shape=box,];
+  "0" [label="<A: void doSet(B)>",];
+  "1" [label="<A: void <init>()>",];
+  "2" [label="<java.lang.Object: void <init>()>",];
+  "3" [label="<B: void <init>()>",];
+  "4" [label="<A: B get()>",];
+  "5" [label="<A: void set(B)>",];
+  "6" [label="<OneObject: void m()>",];
+  "7" [label="<OneObject: void main(java.lang.String[])>",];
+  "1" -> "2" [label="[0@L17] invokespecial %this.<java.lang.Object: void <init>()>();",];
+  "3" -> "2" [label="[0@L33] invokespecial %this.<java.lang.Object: void <init>()>();",];
+  "5" -> "0" [label="[0@L21] invokevirtual %this.<A: void doSet(B)>(b);",];
+  "6" -> "3" [label="[10@L10] invokespecial temp$3.<B: void <init>()>();",];
+  "6" -> "3" [label="[7@L9] invokespecial temp$2.<B: void <init>()>();",];
+  "6" -> "1" [label="[1@L7] invokespecial temp$0.<A: void <init>()>();",];
+  "6" -> "1" [label="[4@L8] invokespecial temp$1.<A: void <init>()>();",];
+  "6" -> "4" [label="[14@L13] temp$4 = invokevirtual a1.<A: B get()>();",];
+  "6" -> "5" [label="[12@L11] invokevirtual a1.<A: void set(B)>(b1);",];
+  "6" -> "5" [label="[13@L12] invokevirtual a2.<A: void set(B)>(b2);",];
+  "7" -> "6" [label="[0@L3] invokestatic <OneObject: void m()>();",];
+}

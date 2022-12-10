@@ -1,0 +1,26 @@
+public class Call extends java.lang.Object {
+
+    public static void main(java.lang.String[] args) {
+        A temp$0, a;
+        B temp$1, b;
+        C temp$2, c, temp$3, x;
+        [0@L4] temp$0 = new A;
+        [1@L4] invokespecial temp$0.<A: void <init>()>();
+        [2@L4] a = temp$0;
+        [3@L5] temp$1 = new B;
+        [4@L5] invokespecial temp$1.<B: void <init>()>();
+        [5@L5] b = temp$1;
+        [6@L6] temp$2 = new C;
+        [7@L6] invokespecial temp$2.<C: void <init>()>();
+        [8@L6] c = temp$2;
+        [9@L7] temp$3 = invokevirtual a.<A: C foo(B,C)>(b, c);
+        [10@L7] x = temp$3;
+        [11@L7] return;
+    }
+
+    public void <init>() {
+        [0@L1] invokespecial %this.<java.lang.Object: void <init>()>();
+        [1@L1] return;
+    }
+
+}

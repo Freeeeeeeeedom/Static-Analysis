@@ -1,0 +1,32 @@
+class OneCall extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        C c, temp$0;
+
+        args := @parameter0: java.lang.String[];
+
+        temp$0 = new C;
+
+        specialinvoke temp$0.<C: void <init>()>();
+
+        c = temp$0;
+
+        virtualinvoke c.<C: void m()>();
+
+        return;
+    }
+
+    void <init>()
+    {
+        OneCall this;
+
+        this := @this: OneCall;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

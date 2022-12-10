@@ -1,0 +1,12 @@
+- id: cipta
+  options:
+    merge-string-constants: false
+    merge-string-objects: false
+    merge-string-builders: false
+    merge-exception-objects: true
+    action: compare
+    file: src\test\resources\pta\cipta\Assign-cipta-expected.txt
+    implicit-entries: false
+    only-app: true
+- id: class-dumper
+  options: {}

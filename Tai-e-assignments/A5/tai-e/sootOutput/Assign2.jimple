@@ -1,0 +1,30 @@
+class Assign2 extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        A temp$0;
+        java.lang.String[] args;
+
+        args := @parameter0: java.lang.String[];
+
+        temp$0 = new A;
+
+        specialinvoke temp$0.<A: void <init>()>();
+
+        virtualinvoke temp$0.<A: void cycle()>();
+
+        return;
+    }
+
+    void <init>()
+    {
+        Assign2 this;
+
+        this := @this: Assign2;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

@@ -1,0 +1,10 @@
+class C extends java.lang.Object {
+
+    D d;
+
+    void <init>() {
+        [0@L48] invokespecial %this.<java.lang.Object: void <init>()>();
+        [1@L48] return;
+    }
+
+}

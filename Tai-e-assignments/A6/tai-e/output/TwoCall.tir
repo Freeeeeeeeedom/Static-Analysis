@@ -1,0 +1,31 @@
+class TwoCall extends java.lang.Object {
+
+    public static void main(java.lang.String[] args) {
+        [0@L3] invokestatic <TwoCall: void m()>();
+        [1@L3] return;
+    }
+
+    static void m() {
+        A temp$0, a;
+        B temp$1, temp$2, b, temp$4, c;
+        C temp$3;
+        [0@L7] temp$0 = new A;
+        [1@L7] invokespecial temp$0.<A: void <init>()>();
+        [2@L7] a = temp$0;
+        [3@L8] temp$1 = new B;
+        [4@L8] invokespecial temp$1.<B: void <init>()>();
+        [5@L8] temp$2 = invokevirtual a.<A: B id(B)>(temp$1);
+        [6@L8] b = temp$2;
+        [7@L9] temp$3 = new C;
+        [8@L9] invokespecial temp$3.<C: void <init>()>();
+        [9@L9] temp$4 = invokevirtual a.<A: B id(B)>(temp$3);
+        [10@L9] c = temp$4;
+        [11@L9] return;
+    }
+
+    void <init>() {
+        [0@L1] invokespecial %this.<java.lang.Object: void <init>()>();
+        [1@L1] return;
+    }
+
+}

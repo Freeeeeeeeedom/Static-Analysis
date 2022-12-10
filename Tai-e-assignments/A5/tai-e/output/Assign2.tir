@@ -1,0 +1,16 @@
+class Assign2 extends java.lang.Object {
+
+    public static void main(java.lang.String[] args) {
+        A temp$0;
+        [0@L3] temp$0 = new A;
+        [1@L3] invokespecial temp$0.<A: void <init>()>();
+        [2@L3] invokevirtual temp$0.<A: void cycle()>();
+        [3@L3] return;
+    }
+
+    void <init>() {
+        [0@L1] invokespecial %this.<java.lang.Object: void <init>()>();
+        [1@L1] return;
+    }
+
+}

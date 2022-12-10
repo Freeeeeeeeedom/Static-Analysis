@@ -1,0 +1,35 @@
+class OneObject extends java.lang.Object {
+
+    public static void main(java.lang.String[] args) {
+        [0@L3] invokestatic <OneObject: void m()>();
+        [1@L3] return;
+    }
+
+    static void m() {
+        A temp$0, a1, temp$1, a2;
+        B temp$2, b1, temp$3, b2, temp$4, x;
+        [0@L7] temp$0 = new A;
+        [1@L7] invokespecial temp$0.<A: void <init>()>();
+        [2@L7] a1 = temp$0;
+        [3@L8] temp$1 = new A;
+        [4@L8] invokespecial temp$1.<A: void <init>()>();
+        [5@L8] a2 = temp$1;
+        [6@L9] temp$2 = new B;
+        [7@L9] invokespecial temp$2.<B: void <init>()>();
+        [8@L9] b1 = temp$2;
+        [9@L10] temp$3 = new B;
+        [10@L10] invokespecial temp$3.<B: void <init>()>();
+        [11@L10] b2 = temp$3;
+        [12@L11] invokevirtual a1.<A: void set(B)>(b1);
+        [13@L12] invokevirtual a2.<A: void set(B)>(b2);
+        [14@L13] temp$4 = invokevirtual a1.<A: B get()>();
+        [15@L13] x = temp$4;
+        [16@L13] return;
+    }
+
+    void <init>() {
+        [0@L1] invokespecial %this.<java.lang.Object: void <init>()>();
+        [1@L1] return;
+    }
+
+}

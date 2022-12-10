@@ -1,0 +1,20 @@
+class TwoType extends java.lang.Object {
+
+    public static void main(java.lang.String[] args) {
+        A temp$0;
+        B temp$1;
+        [0@L7] temp$0 = new A;
+        [1@L7] invokespecial temp$0.<A: void <init>()>();
+        [2@L7] invokevirtual temp$0.<A: void a()>();
+        [3@L8] temp$1 = new B;
+        [4@L8] invokespecial temp$1.<B: void <init>()>();
+        [5@L8] invokevirtual temp$1.<B: void b()>();
+        [6@L8] return;
+    }
+
+    void <init>() {
+        [0@L5] invokespecial %this.<java.lang.Object: void <init>()>();
+        [1@L5] return;
+    }
+
+}

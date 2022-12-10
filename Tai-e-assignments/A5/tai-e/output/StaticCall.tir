@@ -1,0 +1,42 @@
+class StaticCall extends java.lang.Object {
+
+    public static void main(java.lang.String[] args) {
+        java.lang.Object temp$0, temp$1, o;
+        int %intconst0;
+        [0@L4] temp$0 = new java.lang.Object;
+        [1@L4] invokespecial temp$0.<java.lang.Object: void <init>()>();
+        [2@L4] %intconst0 = 100;
+        [3@L4] temp$1 = invokestatic <StaticCall: java.lang.Object foo(int,java.lang.Object)>(%intconst0, temp$0);
+        [4@L4] o = temp$1;
+        [5@L4] return;
+    }
+
+    static java.lang.Object foo(int n, java.lang.Object o) {
+        int %intconst0;
+        java.lang.Object temp$0;
+        [0@L8] %intconst0 = 0;
+        [1@L8] if (n < %intconst0) goto 3;
+        [2@L8] goto 6;
+        [3@L8] nop;
+        [4@L8] temp$0 = invokestatic <StaticCall: java.lang.Object bar(int,java.lang.Object)>(n, o);
+        [5@L9] return temp$0;
+        [6@L9] nop;
+        [7@L11] return o;
+    }
+
+    static java.lang.Object bar(int n, java.lang.Object o) {
+        int temp$0, %intconst0;
+        java.lang.Object temp$2;
+        [0@L14] temp$0 = n;
+        [1@L15] %intconst0 = -1;
+        [2@L15] n = temp$0 + %intconst0;
+        [3@L15] temp$2 = invokestatic <StaticCall: java.lang.Object foo(int,java.lang.Object)>(temp$0, o);
+        [4@L15] return temp$2;
+    }
+
+    void <init>() {
+        [0@L1] invokespecial %this.<java.lang.Object: void <init>()>();
+        [1@L1] return;
+    }
+
+}

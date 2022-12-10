@@ -1,0 +1,21 @@
+digraph G {
+  node [color=".3 .2 1.0",style=filled,shape=box,];
+  "0" [label="<B: void <init>()>",];
+  "1" [label="<A: B id(B)>",];
+  "2" [label="<A: B _id(B)>",];
+  "3" [label="<A: void <init>()>",];
+  "4" [label="<C: void <init>()>",];
+  "5" [label="<java.lang.Object: void <init>()>",];
+  "6" [label="<TwoCall: void main(java.lang.String[])>",];
+  "7" [label="<TwoCall: void m()>",];
+  "0" -> "5" [label="[0@L23] invokespecial %this.<java.lang.Object: void <init>()>();",];
+  "1" -> "2" [label="[0@L15] temp$0 = invokevirtual %this.<A: B _id(B)>(b);",];
+  "3" -> "5" [label="[0@L13] invokespecial %this.<java.lang.Object: void <init>()>();",];
+  "4" -> "0" [label="[0@L26] invokespecial %this.<B: void <init>()>();",];
+  "6" -> "7" [label="[0@L3] invokestatic <TwoCall: void m()>();",];
+  "7" -> "1" [label="[9@L9] temp$4 = invokevirtual a.<A: B id(B)>(temp$3);",];
+  "7" -> "4" [label="[8@L9] invokespecial temp$3.<C: void <init>()>();",];
+  "7" -> "3" [label="[1@L7] invokespecial temp$0.<A: void <init>()>();",];
+  "7" -> "1" [label="[5@L8] temp$2 = invokevirtual a.<A: B id(B)>(temp$1);",];
+  "7" -> "0" [label="[4@L8] invokespecial temp$1.<B: void <init>()>();",];
+}

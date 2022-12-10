@@ -1,0 +1,16 @@
+optionsFile: null
+printHelp: false
+javaVersion: 17
+prependJVM: true
+classPath: src/test/resources/pta/cspta
+mainClass: OneObject
+worldBuilderClass: pascal.taie.frontend.soot.SootWorldBuilder
+preBuildIR: false
+scope: app
+nativeModel: true
+dumpClasses: false
+planFile: null
+analyses:
+  cspta: implicit-entries:false;action:compare;file:src\test\resources\pta\cspta\OneObject-cspta-expected.txt;cs:1-obj;only-app:true
+  class-dumper: ""
+onlyGenPlan: false

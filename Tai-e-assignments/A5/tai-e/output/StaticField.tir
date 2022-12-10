@@ -1,0 +1,17 @@
+class StaticField extends java.lang.Object {
+
+    public static void main(java.lang.String[] args) {
+        B temp$0, b;
+        [0@L4] temp$0 = new B;
+        [1@L4] invokespecial temp$0.<B: void <init>()>();
+        [2@L4] <A: B b> = temp$0;
+        [3@L5] b = <A: B b>;
+        [4@L5] return;
+    }
+
+    void <init>() {
+        [0@L1] invokespecial %this.<java.lang.Object: void <init>()>();
+        [1@L1] return;
+    }
+
+}

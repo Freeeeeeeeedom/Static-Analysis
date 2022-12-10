@@ -1,0 +1,23 @@
+public class StoreLoad extends java.lang.Object {
+
+    public static void main(java.lang.String[] args) {
+        A temp$0, a1, a2;
+        B temp$1, b1, b2;
+        [0@L4] temp$0 = new A;
+        [1@L4] invokespecial temp$0.<A: void <init>()>();
+        [2@L4] a1 = temp$0;
+        [3@L5] temp$1 = new B;
+        [4@L5] invokespecial temp$1.<B: void <init>()>();
+        [5@L5] b1 = temp$1;
+        [6@L6] a1.<A: B f> = b1;
+        [7@L7] a2 = a1;
+        [8@L8] b2 = a2.<A: B f>;
+        [9@L8] return;
+    }
+
+    public void <init>() {
+        [0@L1] invokespecial %this.<java.lang.Object: void <init>()>();
+        [1@L1] return;
+    }
+
+}

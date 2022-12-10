@@ -1,0 +1,91 @@
+class Array extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        A temp$2, temp$5, a, temp$9;
+        java.lang.String[] args;
+        int temp$1, temp$4, temp$7, temp$8, temp$11;
+        A[] arr, temp$0, temp$3, temp$6;
+        B[] barr, temp$10;
+        java.lang.Object o;
+
+        args := @parameter0: java.lang.String[];
+
+        arr = newarray (A)[10];
+
+        temp$0 = arr;
+
+        temp$1 = 0;
+
+        temp$2 = new A;
+
+        specialinvoke temp$2.<A: void <init>()>();
+
+        temp$0[temp$1] = temp$2;
+
+        temp$3 = arr;
+
+        temp$4 = 1;
+
+        temp$5 = new A;
+
+        specialinvoke temp$5.<A: void <init>()>();
+
+        temp$3[temp$4] = temp$5;
+
+        temp$6 = arr;
+
+        temp$7 = 0;
+
+        a = temp$6[temp$7];
+
+        temp$8 = virtualinvoke arr.<java.lang.Object: int hashCode()>();
+
+        barr = newarray (B)[10];
+
+        temp$9 = new A;
+
+        specialinvoke temp$9.<A: void <init>()>();
+
+        staticinvoke <Array: void arrayStore(java.lang.Object[],java.lang.Object)>(barr, temp$9);
+
+        temp$10 = barr;
+
+        temp$11 = 0;
+
+        o = temp$10[temp$11];
+
+        return;
+    }
+
+    private static final void arrayStore(java.lang.Object[], java.lang.Object)
+    {
+        java.lang.Object[] a, temp$0;
+        int temp$1;
+        java.lang.Object o;
+
+        a := @parameter0: java.lang.Object[];
+
+        o := @parameter1: java.lang.Object;
+
+        temp$0 = a;
+
+        temp$1 = 0;
+
+        temp$0[temp$1] = o;
+
+        return;
+    }
+
+    void <init>()
+    {
+        Array this;
+
+        this := @this: Array;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

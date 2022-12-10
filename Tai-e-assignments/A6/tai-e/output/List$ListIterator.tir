@@ -1,0 +1,19 @@
+public class List$ListIterator extends java.lang.Object implements Iterator {
+
+    List this$0;
+
+    public java.lang.Object next() {
+        List temp$0;
+        java.lang.Object temp$1;
+        [0@L38] temp$0 = %this.<List$ListIterator: List this$0>;
+        [1@L38] temp$1 = temp$0.<List: java.lang.Object element>;
+        [2@L38] return temp$1;
+    }
+
+    void <init>(List temp$0) {
+        [0@L35] invokespecial %this.<java.lang.Object: void <init>()>();
+        [1@L35] %this.<List$ListIterator: List this$0> = temp$0;
+        [2@L35] return;
+    }
+
+}

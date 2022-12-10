@@ -1,0 +1,40 @@
+class TwoObject extends java.lang.Object {
+
+    public static void main(java.lang.String[] args) {
+        [0@L7] invokestatic <TwoObject: void m()>();
+        [1@L7] return;
+    }
+
+    static void m() {
+        List temp$0, l1, temp$2, l2;
+        java.lang.Object temp$1, temp$3, temp$5, o1, temp$7, o2;
+        Iterator temp$4, i1, temp$6, i2;
+        [0@L11] temp$0 = new List;
+        [1@L11] invokespecial temp$0.<List: void <init>()>();
+        [2@L11] l1 = temp$0;
+        [3@L12] temp$1 = new java.lang.Object;
+        [4@L12] invokespecial temp$1.<java.lang.Object: void <init>()>();
+        [5@L12] invokevirtual l1.<List: void add(java.lang.Object)>(temp$1);
+        [6@L13] temp$2 = new List;
+        [7@L13] invokespecial temp$2.<List: void <init>()>();
+        [8@L13] l2 = temp$2;
+        [9@L14] temp$3 = new java.lang.Object;
+        [10@L14] invokespecial temp$3.<java.lang.Object: void <init>()>();
+        [11@L14] invokevirtual l2.<List: void add(java.lang.Object)>(temp$3);
+        [12@L16] temp$4 = invokevirtual l1.<List: Iterator iterator()>();
+        [13@L16] i1 = temp$4;
+        [14@L17] temp$5 = invokeinterface i1.<Iterator: java.lang.Object next()>();
+        [15@L17] o1 = temp$5;
+        [16@L18] temp$6 = invokevirtual l2.<List: Iterator iterator()>();
+        [17@L18] i2 = temp$6;
+        [18@L19] temp$7 = invokeinterface i2.<Iterator: java.lang.Object next()>();
+        [19@L19] o2 = temp$7;
+        [20@L19] return;
+    }
+
+    void <init>() {
+        [0@L5] invokespecial %this.<java.lang.Object: void <init>()>();
+        [1@L5] return;
+    }
+
+}

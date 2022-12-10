@@ -1,0 +1,43 @@
+class List extends java.lang.Object
+{
+    java.lang.Object element;
+
+    void add(java.lang.Object)
+    {
+        List this;
+        java.lang.Object e;
+
+        this := @this: List;
+
+        e := @parameter0: java.lang.Object;
+
+        this.<List: java.lang.Object element> = e;
+
+        return;
+    }
+
+    Iterator iterator()
+    {
+        List this;
+        List$ListIterator temp$0;
+
+        this := @this: List;
+
+        temp$0 = new List$ListIterator;
+
+        specialinvoke temp$0.<List$ListIterator: void <init>(List)>(this);
+
+        return temp$0;
+    }
+
+    void <init>()
+    {
+        List this;
+
+        this := @this: List;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

@@ -1,0 +1,41 @@
+class Example extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        A a, temp$0, b, c, temp$2;
+        B temp$1;
+        java.lang.String[] args;
+
+        args := @parameter0: java.lang.String[];
+
+        temp$0 = new A;
+
+        specialinvoke temp$0.<A: void <init>()>();
+
+        a = temp$0;
+
+        temp$1 = new B;
+
+        specialinvoke temp$1.<B: void <init>()>();
+
+        b = temp$1;
+
+        temp$2 = virtualinvoke b.<A: A foo(A)>(a);
+
+        c = temp$2;
+
+        return;
+    }
+
+    void <init>()
+    {
+        Example this;
+
+        this := @this: Example;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

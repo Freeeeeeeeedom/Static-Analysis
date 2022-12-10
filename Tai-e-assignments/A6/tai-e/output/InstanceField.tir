@@ -1,0 +1,19 @@
+class InstanceField extends java.lang.Object {
+
+    public static void main(java.lang.String[] args) {
+        A temp$0, a;
+        [0@L4] temp$0 = new A;
+        [1@L4] invokespecial temp$0.<A: void <init>()>();
+        [2@L4] a = temp$0;
+        [3@L5] invokevirtual a.<A: void longAP()>();
+        [4@L6] invokevirtual a.<A: void cycle()>();
+        [5@L7] invokevirtual a.<A: void callField()>();
+        [6@L7] return;
+    }
+
+    void <init>() {
+        [0@L1] invokespecial %this.<java.lang.Object: void <init>()>();
+        [1@L1] return;
+    }
+
+}

@@ -1,0 +1,26 @@
+class A extends java.lang.Object {
+
+    B f;
+
+    void set(B b) {
+        [0@L21] invokevirtual %this.<A: void doSet(B)>(b);
+        [1@L21] return;
+    }
+
+    void doSet(B p) {
+        [0@L25] %this.<A: B f> = p;
+        [1@L25] return;
+    }
+
+    B get() {
+        B temp$0;
+        [0@L29] temp$0 = %this.<A: B f>;
+        [1@L29] return temp$0;
+    }
+
+    void <init>() {
+        [0@L17] invokespecial %this.<java.lang.Object: void <init>()>();
+        [1@L17] return;
+    }
+
+}

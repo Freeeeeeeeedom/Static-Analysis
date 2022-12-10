@@ -1,0 +1,20 @@
+class OneType extends java.lang.Object {
+
+    public static void main(java.lang.String[] args) {
+        A temp$0;
+        B temp$1;
+        [0@L3] temp$0 = new A;
+        [1@L3] invokespecial temp$0.<A: void <init>()>();
+        [2@L3] invokevirtual temp$0.<A: void m()>();
+        [3@L4] temp$1 = new B;
+        [4@L4] invokespecial temp$1.<B: void <init>()>();
+        [5@L4] invokevirtual temp$1.<B: void m()>();
+        [6@L4] return;
+    }
+
+    void <init>() {
+        [0@L1] invokespecial %this.<java.lang.Object: void <init>()>();
+        [1@L1] return;
+    }
+
+}

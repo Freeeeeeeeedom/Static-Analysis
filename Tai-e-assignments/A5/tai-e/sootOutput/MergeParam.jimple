@@ -1,0 +1,53 @@
+class MergeParam extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        A a1, temp$0, a2, temp$1, result, temp$2, temp$3;
+        java.lang.String[] args;
+
+        args := @parameter0: java.lang.String[];
+
+        temp$0 = new A;
+
+        specialinvoke temp$0.<A: void <init>()>();
+
+        a1 = temp$0;
+
+        temp$1 = new A;
+
+        specialinvoke temp$1.<A: void <init>()>();
+
+        a2 = temp$1;
+
+        temp$2 = staticinvoke <MergeParam: A foo(A)>(a1);
+
+        result = temp$2;
+
+        temp$3 = staticinvoke <MergeParam: A foo(A)>(a2);
+
+        result = temp$3;
+
+        return;
+    }
+
+    public static A foo(A)
+    {
+        A a;
+
+        a := @parameter0: A;
+
+        return a;
+    }
+
+    void <init>()
+    {
+        MergeParam this;
+
+        this := @this: MergeParam;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

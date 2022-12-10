@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[1691]堆叠长方体的最大高度.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/doc/content/[1691]堆叠长方体的最大高度.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1691" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[1691]堆叠长方体的最大高度.java" />
+              <option name="titleSlug" value="maximum-height-by-stacking-cuboids" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

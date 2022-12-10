@@ -1,0 +1,74 @@
+class TwoObject extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+
+        args := @parameter0: java.lang.String[];
+
+        staticinvoke <TwoObject: void m()>();
+
+        return;
+    }
+
+    static void m()
+    {
+        Iterator i1, temp$4, i2, temp$6;
+        List l1, temp$0, l2, temp$2;
+        java.lang.Object temp$1, temp$3, o1, temp$5, o2, temp$7;
+
+        temp$0 = new List;
+
+        specialinvoke temp$0.<List: void <init>()>();
+
+        l1 = temp$0;
+
+        temp$1 = new java.lang.Object;
+
+        specialinvoke temp$1.<java.lang.Object: void <init>()>();
+
+        virtualinvoke l1.<List: void add(java.lang.Object)>(temp$1);
+
+        temp$2 = new List;
+
+        specialinvoke temp$2.<List: void <init>()>();
+
+        l2 = temp$2;
+
+        temp$3 = new java.lang.Object;
+
+        specialinvoke temp$3.<java.lang.Object: void <init>()>();
+
+        virtualinvoke l2.<List: void add(java.lang.Object)>(temp$3);
+
+        temp$4 = virtualinvoke l1.<List: Iterator iterator()>();
+
+        i1 = temp$4;
+
+        temp$5 = interfaceinvoke i1.<Iterator: java.lang.Object next()>();
+
+        o1 = temp$5;
+
+        temp$6 = virtualinvoke l2.<List: Iterator iterator()>();
+
+        i2 = temp$6;
+
+        temp$7 = interfaceinvoke i2.<Iterator: java.lang.Object next()>();
+
+        o2 = temp$7;
+
+        return;
+    }
+
+    void <init>()
+    {
+        TwoObject this;
+
+        this := @this: TwoObject;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

@@ -1,0 +1,65 @@
+class OneObject extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+
+        args := @parameter0: java.lang.String[];
+
+        staticinvoke <OneObject: void m()>();
+
+        return;
+    }
+
+    static void m()
+    {
+        A a1, temp$0, a2, temp$1;
+        B b1, temp$2, b2, temp$3, x, temp$4;
+
+        temp$0 = new A;
+
+        specialinvoke temp$0.<A: void <init>()>();
+
+        a1 = temp$0;
+
+        temp$1 = new A;
+
+        specialinvoke temp$1.<A: void <init>()>();
+
+        a2 = temp$1;
+
+        temp$2 = new B;
+
+        specialinvoke temp$2.<B: void <init>()>();
+
+        b1 = temp$2;
+
+        temp$3 = new B;
+
+        specialinvoke temp$3.<B: void <init>()>();
+
+        b2 = temp$3;
+
+        virtualinvoke a1.<A: void set(B)>(b1);
+
+        virtualinvoke a2.<A: void set(B)>(b2);
+
+        temp$4 = virtualinvoke a1.<A: B get()>();
+
+        x = temp$4;
+
+        return;
+    }
+
+    void <init>()
+    {
+        OneObject this;
+
+        this := @this: OneObject;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

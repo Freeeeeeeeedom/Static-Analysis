@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[813]最大平均值和的分组.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/doc/content/[813]最大平均值和的分组.md" />
+              <option name="frontendQuestionId" value="leetcode.cn813" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../../../Leethub/leetcode/editor/cn/[813]最大平均值和的分组.java" />
+              <option name="titleSlug" value="largest-sum-of-averages" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

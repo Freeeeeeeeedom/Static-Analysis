@@ -1,0 +1,17 @@
+class OneCall extends java.lang.Object {
+
+    public static void main(java.lang.String[] args) {
+        C temp$0, c;
+        [0@L3] temp$0 = new C;
+        [1@L3] invokespecial temp$0.<C: void <init>()>();
+        [2@L3] c = temp$0;
+        [3@L4] invokevirtual c.<C: void m()>();
+        [4@L4] return;
+    }
+
+    void <init>() {
+        [0@L1] invokespecial %this.<java.lang.Object: void <init>()>();
+        [1@L1] return;
+    }
+
+}

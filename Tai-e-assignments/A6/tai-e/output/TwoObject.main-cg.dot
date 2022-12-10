@@ -1,0 +1,25 @@
+digraph G {
+  node [shape=box,color=".3 .2 1.0",style=filled,];
+  "0" [label="<List: void add(java.lang.Object)>",];
+  "1" [label="<List$ListIterator: void <init>(List)>",];
+  "2" [label="<List: void <init>()>",];
+  "3" [label="<TwoObject: void main(java.lang.String[])>",];
+  "4" [label="<java.lang.Object: void <init>()>",];
+  "5" [label="<List: Iterator iterator()>",];
+  "6" [label="<TwoObject: void m()>",];
+  "7" [label="<List$ListIterator: java.lang.Object next()>",];
+  "1" -> "4" [label="[0@L35] invokespecial %this.<java.lang.Object: void <init>()>();",];
+  "2" -> "4" [label="[0@L23] invokespecial %this.<java.lang.Object: void <init>()>();",];
+  "3" -> "6" [label="[0@L7] invokestatic <TwoObject: void m()>();",];
+  "5" -> "1" [label="[1@L32] invokespecial temp$0.<List$ListIterator: void <init>(List)>(%this);",];
+  "6" -> "2" [label="[7@L13] invokespecial temp$2.<List: void <init>()>();",];
+  "6" -> "4" [label="[10@L14] invokespecial temp$3.<java.lang.Object: void <init>()>();",];
+  "6" -> "5" [label="[12@L16] temp$4 = invokevirtual l1.<List: Iterator iterator()>();",];
+  "6" -> "5" [label="[16@L18] temp$6 = invokevirtual l2.<List: Iterator iterator()>();",];
+  "6" -> "7" [label="[14@L17] temp$5 = invokeinterface i1.<Iterator: java.lang.Object next()>();",];
+  "6" -> "7" [label="[18@L19] temp$7 = invokeinterface i2.<Iterator: java.lang.Object next()>();",];
+  "6" -> "0" [label="[11@L14] invokevirtual l2.<List: void add(java.lang.Object)>(temp$3);",];
+  "6" -> "0" [label="[5@L12] invokevirtual l1.<List: void add(java.lang.Object)>(temp$1);",];
+  "6" -> "4" [label="[4@L12] invokespecial temp$1.<java.lang.Object: void <init>()>();",];
+  "6" -> "2" [label="[1@L11] invokespecial temp$0.<List: void <init>()>();",];
+}

@@ -1,0 +1,78 @@
+class StaticCall extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        java.lang.Object o, temp$0, temp$1;
+
+        args := @parameter0: java.lang.String[];
+
+        temp$0 = new java.lang.Object;
+
+        specialinvoke temp$0.<java.lang.Object: void <init>()>();
+
+        temp$1 = staticinvoke <StaticCall: java.lang.Object foo(int,java.lang.Object)>(100, temp$0);
+
+        o = temp$1;
+
+        return;
+    }
+
+    static java.lang.Object foo(int, java.lang.Object)
+    {
+        int n;
+        java.lang.Object o, temp$0;
+
+        n := @parameter0: int;
+
+        o := @parameter1: java.lang.Object;
+
+        if n < 0 goto label1;
+
+        goto label2;
+
+     label1:
+        nop;
+
+        temp$0 = staticinvoke <StaticCall: java.lang.Object bar(int,java.lang.Object)>(n, o);
+
+        return temp$0;
+
+     label2:
+        nop;
+
+        return o;
+    }
+
+    static java.lang.Object bar(int, java.lang.Object)
+    {
+        int n, temp$0, temp$1;
+        java.lang.Object o, temp$2;
+
+        n := @parameter0: int;
+
+        o := @parameter1: java.lang.Object;
+
+        temp$0 = n;
+
+        temp$1 = temp$0 + -1;
+
+        n = temp$1;
+
+        temp$2 = staticinvoke <StaticCall: java.lang.Object foo(int,java.lang.Object)>(temp$0, o);
+
+        return temp$2;
+    }
+
+    void <init>()
+    {
+        StaticCall this;
+
+        this := @this: StaticCall;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}
